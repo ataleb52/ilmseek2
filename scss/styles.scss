@@ -1,0 +1,350 @@
+/******************************************************************
+Site Name: Ilm Seek
+Theme URI: http://www.IlmSeek.com
+Description: A small site built for the Ilm Seek project at the Islamic Center of Tucson.
+Author: Ahmad Taleb
+Author URI: http://www.ahmadtaleb.com
+******************************************************************/
+
+/***Colors***/
+$red:			#F05353;
+$darkred:		#B24040;
+$shadowgray:	#CECECC;
+$blockgray: 	#EFEFEF;
+$blockblue:		#3B97D3;
+/***Fonts***/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+@font-face {
+	font-family: haymaker;
+	src: url(fonts/'Haymaker.ttf');
+}
+
+body {
+	font-family: 'open-sans', sans-serif;
+	font-weight: 300;
+	text-align: justify;
+	h2 {
+		font-weight: 300;
+		text-align: center;
+		font-size: 5em;
+		margin: 0 0 25px 0;
+	}
+	h3 {
+		margin: 0;
+	}
+	p{
+		font-size: 25px;
+		margin: 0;
+	}
+}
+
+.navbar {
+	position: relative;
+	border-bottom: 4px solid $shadowgray;
+	nav {
+		ul {
+			text-align: justify;
+			list-style: none;
+			padding: 0 5em;
+			margin: -15px 0 0 0;
+			height: 100px;
+			li {
+				margin: 0;
+				display: inline-block;  
+				font-weight: 300;
+				text-transform: uppercase;
+				font-size: 1.2em;
+				h1 {
+					font-weight: 300;
+					font-family: 'haymaker', 'open-sans', sans-serif;
+					color: #bdbdbd;
+					text-shadow: 1px 2px 3px #838183;
+					font-size: 2em;
+				}
+				a {
+					text-decoration: none;
+					color: black;
+					
+				}
+			}
+			&:after {
+				content: '';
+				width: 100%;
+				border-bottom: 5px dashed #922d8d;
+				display: inline-block;
+			}  
+		}
+		
+	}
+}
+
+.red {
+	background: #F05353;
+	border-bottom: 3px solid #B24040;
+	padding: 5px 10px;
+	border-radius: 5px;
+}
+
+
+.intro_container {
+	background: $blockgray;
+	padding: 0 0 25px 0;
+	.intro {
+		background: $blockgray;
+		.introimg {
+			width: 35%;
+			margin: 0 auto;
+			img {
+				width: 100%;
+			}
+		}
+		.icons {
+			margin: 0 0 0 200px;
+			.icon_box {
+				margin: 0 5em 0 0;
+				.icon_content {
+					text-align: center;				
+					img {
+						width: 100%;
+						}
+					h3 {
+						font-weight: 300;
+						font-size: 3.5em;
+					}
+				}
+			}
+		}
+		.introtext {
+			margin-bottom: 25px;
+			.hello {
+				width: 80%;
+				margin: 0 auto;
+				ol, ul {
+					font-size: 25px;
+					h3 {
+						font-size: 1.5em; 
+					}
+				}	
+			}
+			
+		}
+	}
+}
+
+.apply_button {
+	background: $red;
+	text-align: center;
+	color: white;
+	border-bottom: 5px solid #B24040;
+	width: 500px;
+	margin: 0 auto;
+	border-radius: 5px;
+	a {
+		text-decoration: none;
+		color: white;
+		h3 {
+			font-size: 3em;
+			font-weight: 300;				
+		}
+	}
+}
+
+.deuce {
+	margin-bottom: 25px;
+}
+
+.apply_alt {
+	background: $blockblue;
+	width: 650px;
+	border-bottom: 5px solid #1a557e;
+	margin: 25px 0 0 0 ;
+}
+.phil_cont {
+	background: #f39c12;
+	color: white;
+	.why {
+		padding: 25px 0;
+		h2 {
+			clear: both;
+		}
+		.why_box {
+			text-align: center;
+			.why_content {
+				h3 {
+					font-weight: 300;
+					font-size: 2.5em;
+				}
+				p{
+					width: 80%;
+					margin: 0 auto;
+					font-size: 25px;
+					text-align: justify;
+				}
+			}
+		}
+		
+	}
+}
+
+.how_container {
+	background: #F05353;
+	.how {
+		padding: 25px 0;
+		color: white;
+		.how_box {
+			img {
+				float: left;
+			}
+			.how_info{
+				float: right;
+				h3 {
+					font-weight: 300;
+					font-size: 3.5em;
+				}
+				li {
+					font-size: 25px;
+				}
+			}
+			.albook {
+				float: right;
+				.alinfo {
+					float: left;
+				}	
+			}
+		}
+	}
+}
+
+.what_container {
+	background: $blockblue;
+	color: white;
+	.what {
+		padding: 25px 0;
+		ul {
+			list-style: none;
+			margin: 0 0 25px 0;
+			padding: 0;
+			li {
+				margin: 25px 0 0 0;
+				span:nth-of-type(1) {
+					font-weight: bold;
+					font-size: 30px;
+				}
+				p {
+						width: 80%;
+						margin: 0 auto;
+					}
+				
+			}
+		}
+	}
+}
+
+
+.who_container {
+	background: #59bd7e;
+	.who {
+		color: white;
+		padding: 25px 0;
+		p {
+			width: 80%;
+			margin: 0 auto;
+		}
+	}
+}
+
+.ready_container {
+	background: #9a5b9f;
+	color: white;
+	padding-bottom: 25px;
+	.ready {
+		padding: 25px 0;
+		text-align: center;
+		p {
+			width: 80%;
+			margin: 0 auto 25px auto;
+			text-align: left;
+		}
+		.poster {
+			width: 50%;
+		}
+		
+		.details {
+			padding: 25px 0 0 0;
+			h3 {
+				font-size: 3em;
+				font-weight: 300;
+			}
+			ul {
+				text-align: left;
+				font-size: 25px;
+				p {
+					width: 100%;
+					margin: 0;
+				}
+				li {
+					margin: 25px 0 0 0;
+				}
+			}
+		}
+	}
+}
+
+.footer_container {
+	background: $blockblue;
+	padding: 25px 0 0 0;
+	.footer {
+	}
+}
+
+.green {
+	background: #59bd7e;
+	border-bottom: 10px solid #3c8e5a;
+	padding: .5em;
+	font-size: 1.2em;
+	width: 350px;
+}
+
+.up_circle {
+	border-radius: 50px;
+	width: 60px;
+	height: 55px;
+	margin: 0 auto;
+	p {
+			font-size: 15px;
+			color: white;
+		}
+}
+
+.arrow-up {
+	width: 0; 
+	height: 0; 
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 30px solid #59bd7e;
+	margin: auto auto;
+}
+
+a {
+	text-decoration: none;
+}
+
+.blue {
+	border-bottom: 30px solid $blockblue;
+}
+
+.red_arrow {
+	border-bottom: 30px solid #F05353;
+}
+
+.yellow_arrow {
+	border-bottom: 30px solid #f39c12;
+	clear: both;
+}
+.cii {
+	clear: both;
+}
+
+.purp_arrow {
+	border-bottom: 30px solid #9a5b9f;
+}
